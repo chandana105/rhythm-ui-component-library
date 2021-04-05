@@ -203,32 +203,35 @@ body {
   background-position: center;
 }
 
-.main-content {
-  position: relative;
+.main-content > div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 /* main */
 .main-content .text-container {
   display: flex;
-  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
   border: 2px solid var(--snackbar-bg);
   padding: 2rem;
   position: absolute;
   top: 4rem;
-  left: 5.5rem;
-  min-width: 68rem;
+  left: 15rem;
   background: rgba(0, 0, 0, 0.8);
   color: var(--text-container-color);
-  font-size: 1.6rem;
+  font-size: 1.2rem;
   z-index: 3;
-  align-items: center;
-  justify-content: center;
+
 }
 
 .main-content .btn-container {
   position: absolute;
   top: 20rem;
-  left: 31.5rem;
+  left: 19.5rem;
+
+
 }
 
 .butn {
@@ -256,12 +259,18 @@ body {
   background-color: var(--primary-color);
 }
 
-.footer span {
+ .footer-text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer-text span {
   align-items: center;
   position: absolute;
   bottom: 1.6rem;
   letter-spacing: 0.02rem;
-  left: 32.3rem;
+  left: 31rem;
   text-align: center;
 }
 
