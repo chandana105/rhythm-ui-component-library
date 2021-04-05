@@ -1,0 +1,270 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap");
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+:root {
+  --primary-color: #c4b5fd;
+  --secondary-color: #ede9fe;
+  --header-link-color: #18181b;
+  --searchbox-color: #1f2937;
+  /* index */
+  --text-container-color: #f9fafb;
+  --butn-hover: #ddd6fe;
+  /* alert */
+  --simple-primary-background: rgb(232, 244, 253);
+  --simple-success-background: rgb(237, 247, 237);
+  --simple-warning-background: rgb(255, 244, 229);
+  --simple-danger-background: rgb(253, 236, 234);
+  --outlined-primary-border: 1px solid #2196f3;
+  --outlined-success-border: 1px solid #4caf50;
+  --outlined-warning-border: 1px solid #ff9800;
+  --outlined-danger-border: 1px solid #f44336;
+  --alert-primary-i-color: #60a5fa;
+  --alert-success-i-color: #34d399;
+  --alert-warning-i-color: #fb923c;
+  --alert-danger-i-color: #f87171;
+  --text-color: rgb(13, 60, 97);
+
+  /* badge */
+  --badge-green-bg: #10b981;
+  --badge-gray-bg: #6b7280;
+  --badge-red-bg: #dc2626;
+  --badge-white-color: #fff;
+  --bg-primary-color: #4c1d95;
+  --bg-red-bg: #fca5a5;
+  --bg-red-color: #7f1d1d;
+  --bg-green-bg: #6ee7b7;
+  --bg-green-color: #064e3b;
+  --bg-orange-bg: #fdba74;
+  --bg-orange-color: #7c2d12;
+  /* button focus */
+  --bg-green-focus: #a7f3d0;
+  --bg-orange-focus: #fed7aa;
+  --bg-red-focus: #fecaca;
+  /* card */
+  --card-border-color: #ccc;
+  --card-shadow: #111827;
+  --card-discount-color: #065f46;
+  /* grid */
+  --grid-bg: #0e7490;
+  --grid-color: #ecfeff;
+  --grid-item-border: #67e8f9;
+  /* rating */
+  --rating-star: goldenrod;
+  --rating-star-high: #047857;
+  --rating-star-medium: #d97706;
+  --rating-star-low: #b91c1c;
+  /* snackbar */
+  --snackbar-bg: #000;
+  /* typography */
+  --typography-graytext-color: #a3a3a3;
+  /* modal */
+  --modal-backdrop-color: #111;
+  /* floating */
+  --floating-hover: #ddd6fe;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.active {
+  border-bottom: 2px solid var(--badge-white-color);
+}
+
+nav a:hover {
+  font-weight: 600;
+}
+
+html,
+body {
+  height: 100vh;
+  overflow: auto;
+  font-size: 1rem;
+  font-family: "Roboto Slab", serif;
+}
+
+.container > div {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.header {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  padding: 2.5rem;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  background-color: var(--primary-color);
+}
+
+.header > a {
+  padding: 1rem 1rem;
+  color: var(--header-link-color);
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+/* logo */
+.header .logo {
+  margin-right: auto;
+}
+
+.header .logo span {
+  font-size: larger;
+  position: absolute;
+  top: 1.6rem;
+}
+
+/* search container */
+.header > div {
+  padding: 1rem 1rem;
+}
+
+.search-container {
+  display: flex;
+  justify-content: center;
+}
+
+.search-container > div {
+  padding: 0.5rem 2rem;
+}
+
+.search {
+  background-color: var(--secondary-color);
+  color: var(--searchbox-color);
+}
+
+.search i {
+  position: absolute;
+  top: 0.9rem;
+  left: 1rem;
+  line-height: 1.2;
+  margin-right: auto;
+}
+
+.search-box {
+  border-radius: 0.3rem;
+  padding: 0.3rem 0.8rem;
+  font-size: 0.9rem;
+  position: relative;
+  width: 14rem;
+  font-size: large;
+}
+
+.search-box span {
+  margin-left: 0.2rem;
+}
+
+.search-box span input {
+  outline: none;
+  background-color: transparent;
+  color: var(--searchbox-color);
+  border: none;
+  padding: 0.4rem 1rem;
+  width: 11rem;
+  font-size: 1.1rem;
+}
+
+/* github */
+.header .github {
+  margin-right: 1.8rem;
+}
+
+.container {
+  min-height: 100%;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: 70px auto 70px;
+}
+
+.header {
+  grid-column: 1 / -1;
+}
+
+.side-bar {
+  grid-column: 1 / 3;
+}
+
+.content {
+  grid-column: 1 / -1;
+  background-image: url(./images/musicnotes.jpg);
+  position: relative;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.main-content {
+  position: relative;
+}
+
+/* main */
+.main-content .text-container {
+  display: flex;
+  flex-wrap: wrap;
+  border: 2px solid var(--snackbar-bg);
+  padding: 2rem;
+  position: absolute;
+  top: 4rem;
+  left: 5.5rem;
+  min-width: 68rem;
+  background: rgba(0, 0, 0, 0.8);
+  color: var(--text-container-color);
+  font-size: 1.6rem;
+  z-index: 3;
+  align-items: center;
+  justify-content: center;
+}
+
+.main-content .btn-container {
+  position: absolute;
+  top: 20rem;
+  left: 31.5rem;
+}
+
+.butn {
+  font-weight: 700;
+  padding: 1rem 6rem;
+  cursor: pointer;
+  outline: none;
+  border: none;
+  font-size: 1rem;
+  box-shadow: 0 4px 8px 0 rgb(0 0 0 / 20%);
+  border-radius: 1rem;
+  letter-spacing: 1px;
+  color: var(--searchbox-color);
+}
+
+.butn:hover {
+  background: var(--butn-hover);
+}
+
+/* footer */
+.footer {
+  grid-column: 1 / -1;
+  padding: 2.5rem;
+  position: relative;
+  background-color: var(--primary-color);
+}
+
+.footer span {
+  align-items: center;
+  position: absolute;
+  bottom: 1.6rem;
+  letter-spacing: 0.02rem;
+  left: 32.3rem;
+  text-align: center;
+}
+
+.footer span i {
+  color: var(--secondary-color);
+}

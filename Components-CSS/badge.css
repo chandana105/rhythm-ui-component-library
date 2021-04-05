@@ -1,0 +1,122 @@
+
+
+.avatar-container {
+  justify-content: space-between;
+  width: 40rem;
+}
+
+.avatar-badge-container {
+  position: relative;
+  width: min-content;
+}
+
+.badge-green {
+  background-color: var(--badge-green-bg);
+}
+
+.badge-gray {
+  background: var(--badge-gray-bg);
+}
+
+.badge-red {
+  background-color: var(--badge-red-bg);
+  color: var(--badge-white-color);
+}
+
+.avatar-badge {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  border-radius: 50%;
+  border: 2px solid var(--badge-white-color);
+}
+
+.badge-avatar-small {
+  font-size: 0.8rem;
+  height: 0.6rem;
+  width: 0.6rem;
+}
+
+.badge-avatar-medium {
+  font-size: 0.9rem;
+  text-align: center;
+  height: 1.2rem;
+  width: 1.2rem;
+}
+
+.badge-avatar-large {
+  font-size: 0.7rem;
+  text-align: center;
+  height: 1.7rem;
+  width: 1.7rem;
+}
+
+.avatar-badge-icons-msg {
+  position: absolute;
+  top: 1.2rem;
+  right: 1rem;
+}
+
+.avatar-badge-icons-cart {
+  position: absolute;
+  top: 0.6rem;
+  right: 1.8rem;
+}
+
+.avatar-badge-icons-bell {
+  position: absolute;
+  top: 1.1rem;
+  right: 1.1rem;
+}
+
+.badge-avatar-large-icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.2rem;
+  height: 1.7rem;
+  width: 1.7rem;
+  font-weight: 400;
+  border-radius: 50%;
+}
+
+.cart .badge-avatar-large-icons {
+  height: 1.8rem;
+  width: 1.8rem;
+  border: 0.1rem solid var(--badge-white-color);
+}
+
+/* badges */
+.badge-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 40rem; 
+  padding: 1rem;
+  flex-wrap: wrap;
+  margin-bottom: 2rem;
+}
+
+.badge-regular {
+  padding: 0.3rem 0.7rem;
+}
+
+.bg-primary {
+  background-color: var(--primary-color);
+  color: var(--bg-primary-color);
+}
+
+.bg-red {
+  background: var(--bg-red-bg);
+  color: var(--bg-red-color);
+}
+
+.bg-green {
+  background: var(--bg-green-bg) ;
+  color: var(--bg-green-color);
+}
+
+.bg-orange {
+  background: var(--bg-orange-bg);
+  color: var(--bg-orange-color);
+}

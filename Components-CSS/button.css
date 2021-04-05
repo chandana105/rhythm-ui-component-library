@@ -1,0 +1,86 @@
+.btn-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  width: 40rem;
+  margin-bottom: 4rem;
+}
+
+button {
+  font-family: "Roboto Slab", serif;
+}
+
+.btn {
+  padding: 0.7rem 1.5rem;
+  cursor: pointer;
+  outline: none;
+  border: none;
+  font-size: 1rem;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  border-radius: 1rem;
+  letter-spacing: 1px;
+  color: var(--searchbox-color);
+}
+
+.btn-primary:focus {
+  outline-offset: 1px;
+  background: var(--secondary-color);
+}
+
+.btn-secondary:focus {
+  outline-offset: 1px;
+  background: var(--primary-color);
+}
+
+.bg-green:focus {
+  outline-offset: 1px;
+  background: var(--bg-green-focus);
+}
+
+.bg-orange:focus {
+  outline-offset: 1px;
+  background: var(--bg-orange-focus);
+}
+
+.bg-red:focus {
+  outline-offset: 1px;
+  background: var(--bg-red-focus);
+}
+
+.btn-gp {
+  border-radius: 0;
+  border: 2px solid inherit;
+}
+
+.btn a {
+  text-decoration: none;
+  color: var(--searchbox-color);
+}
+
+.btn-primary {
+  background: var(--primary-color);
+}
+
+.btn-secondary {
+  background: var(--secondary-color);
+}
+
+.btn-icon span {
+  padding: 0.5rem;
+}
+
+.bg-green {
+  background: var(--bg-green-bg);
+  color: var(--bg-green-color);
+}
+
+.bg-orange {
+  background: var(--bg-orange-bg);
+  color: var(--bg-orange-color);
+}
+
+.bg-red {
+  background: var(--bg-red-bg);
+  color: var(--bg-red-color);
+}
