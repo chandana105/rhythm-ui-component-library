@@ -29,11 +29,6 @@ if (modalHideIcon) {
   modalHideIcon.addEventListener("click", closeModal);
 }
 
-// if (backDrop) {
-//   backDrop.addEventListener('click', closeModal)
-
-// }
-
 // SNACKBAR
 
 const snackbar = document.getElementById("snackbar-contents");
@@ -59,55 +54,11 @@ if (snackbarClose) {
   });
 }
 
-
-
 // floating action button
 
-const floatingButton = document.getElementById('floating-btn')
-console.log(floatingButton)
-
-window.onscroll = function() {scrollFunction()};
-
-
-console.log(document.body.scrollTop)
-
-function scrollFunction() {
-  console.log('running')
-  if (document.body.scrollTop > 10 || document.documentElement.scrollTop > 10   ) {
-    floatingButton.style.display = "block";
-  } else {
-    floatingButton.style.display = "none";
-  }
-}
+const floatingButton = document.getElementById("floating-btn");
 
 function topFunction() {
   document.body.scrollTop = 0;
   document.documentElement.scrollTop = 0;
 }
-
-// const floatingButton = document.getElementById('floating-btn')
-
-// const scrollableHeight =
-//   document.documentElement.scrollHeight - document.documentElement.clientHeight;
-
-//   console.log(scrollableHeight);
-
-//   console.log(document.documentElement.scrollTop)
-
-//   const GOLDEN_RATIO = 0.5;
-
-//   document.addEventListener("scroll", () => {
-//     if (document.documentElement.scrollTop / scrollableHeight > GOLDEN_RATIO) {
-//       floatingButton.style.display = "block";
-//     } else {
-//       floatingButton.style.display = "none";
-//     }
-//   });
-
-//   floatingButton.addEventListener("click", () => {
-//     console.log('cf')
-//     window.scrollTo({
-//       top: 0,
-//       behavior: "smooth",
-//     });
-//   });

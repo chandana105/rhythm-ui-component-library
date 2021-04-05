@@ -89,8 +89,13 @@ ul > li {
 }
 
 .css-docs-code iframe {
-  width: 400px;
-  height: 300px;
+  width: 640px;
+  height: 150px;
+}
+
+.css-docs-js-code iframe {
+  width: 560px;
+  height: 150px;
 }
 
 .nav-code iframe{
