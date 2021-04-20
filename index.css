@@ -1,4 +1,8 @@
-@import url("https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap');
+html {
+  scroll-behavior: smooth;
+}
+
 * {
   margin: 0px;
   padding: 0px;
@@ -85,7 +89,7 @@ body {
   height: 100vh;
   overflow: auto;
   font-size: 1rem;
-  font-family: "Roboto Slab", serif;
+  font-family: 'Roboto Slab', serif;
 }
 
 .container > div {
@@ -201,6 +205,7 @@ body {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
+  max-width: 100%;
 }
 
 .main-content > div {
@@ -208,6 +213,7 @@ body {
   justify-content: center;
   align-items: center;
   position: relative;
+  max-width: 100%;
 }
 
 /* main */
@@ -219,27 +225,34 @@ body {
   padding: 2rem;
   position: absolute;
   top: 4rem;
-  left: 15rem;
+  left: 10rem;
+  right: 10rem;
   background: rgba(0, 0, 0, 0.8);
   color: var(--text-container-color);
-  font-size: 1.2rem;
+  font-size: 1.3rem;
   z-index: 3;
-
 }
 
-.main-content .btn-container {
+.main-content .text-container p {
+  font-weight: 700;
+}
+
+.main-content .button-container {
+  margin: auto;
   position: absolute;
-  top: 20rem;
-  left: 19.5rem;
-
-
+  top: 18rem;
+  left: 22rem;
+  right: 20rem;
 }
 
-.butn {
+.button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   font-weight: 700;
   padding: 1rem 6rem;
   cursor: pointer;
-  outline: none;
+  outline: var(--searchbox-color);
   border: none;
   font-size: 1rem;
   box-shadow: 0 4px 8px 0 rgb(0 0 0 / 20%);
@@ -248,7 +261,7 @@ body {
   color: var(--searchbox-color);
 }
 
-.butn:hover {
+.button:hover {
   background: var(--butn-hover);
 }
 
@@ -260,21 +273,23 @@ body {
   background-color: var(--primary-color);
 }
 
- .footer-text {
+.footer > div {
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
 .footer-text span {
+  display: flex;
+  justify-content: center;
   align-items: center;
   position: absolute;
-  bottom: 1.6rem;
-  letter-spacing: 0.02rem;
-  left: 31rem;
+  left: 30.5rem;
+  right: 28rem;
   text-align: center;
 }
 
 .footer span i {
+  margin: 0.2rem;
   color: var(--secondary-color);
 }
