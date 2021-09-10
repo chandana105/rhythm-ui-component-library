@@ -9,7 +9,7 @@
 .card {
   display: flex;
   flex-direction: column;
-  width: 100%;
+  /* width: 100%; */
   justify-content: center;
   align-items: center;
   width: min-content;
@@ -27,7 +27,7 @@
 /* horizontal */
 .card2 {
   display: flex;
-  width: 100%;
+  /* width: 100%; */
   justify-content: center;
   align-items: center;
   position: relative;
@@ -82,13 +82,13 @@
 .card-horizontal button {
   background: transparent;
   border: none;
-  outline: none;
+  /* outline: none; */
 }
 
 .thumbnail button:focus,
 .text button:focus,
 .card-horizontal button:focus {
-  outline-offset: 1px;
+  /* outline-offset: 1px; */
   background: var(--secondary-color);
 }
 

@@ -10,7 +10,7 @@
 .simple-input input {
   padding: 0.7rem;
   border: 1px solid var(--card-border-color);
-  outline: 1px solid var(--card-border-color);
+  /* outline: 1px solid var(--card-border-color); */
 }
 
 .validate {

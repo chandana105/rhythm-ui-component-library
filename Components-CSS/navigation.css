@@ -20,7 +20,7 @@
   margin-right: auto;
 }
 
-.nav-header .logo span {
+.nav-header .logo strong {
   font-size: larger;
   position: absolute;
   top: 3.5rem;

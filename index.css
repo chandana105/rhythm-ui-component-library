@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap");
 html {
   scroll-behavior: smooth;
 }
@@ -89,7 +89,7 @@ body {
   height: 100vh;
   overflow: auto;
   font-size: 1rem;
-  font-family: 'Roboto Slab', serif;
+  font-family: "Roboto Slab", serif;
 }
 
 .container > div {
@@ -122,7 +122,7 @@ body {
   margin-right: auto;
 }
 
-.header .logo span {
+.header .logo strong {
   font-size: larger;
   position: absolute;
   top: 1.6rem;
@@ -164,12 +164,13 @@ body {
   font-size: large;
 }
 
-.search-box span {
+/* .search-box span {
   margin-left: 0.2rem;
-}
+} */
 
-.search-box span input {
-  outline: none;
+.search-box input {
+  margin-left: 0.2rem;
+  outline-color: var(--primary-color);
   background-color: transparent;
   color: var(--searchbox-color);
   border: none;
@@ -252,7 +253,7 @@ body {
   font-weight: 700;
   padding: 1rem 6rem;
   cursor: pointer;
-  outline: var(--searchbox-color);
+  outline-color: #fff;
   border: none;
   font-size: 1rem;
   box-shadow: 0 4px 8px 0 rgb(0 0 0 / 20%);

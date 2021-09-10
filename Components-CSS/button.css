@@ -14,7 +14,7 @@ button {
 .btn {
   padding: 0.7rem 1.5rem;
   cursor: pointer;
-  outline: none;
+  /* outline: none; */
   border: none;
   font-size: 1rem;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
@@ -24,27 +24,27 @@ button {
 }
 
 .btn-primary:focus {
-  outline-offset: 1px;
+  /* outline-offset: 1px; */
   background: var(--secondary-color);
 }
 
 .btn-secondary:focus {
-  outline-offset: 1px;
+  /* outline-offset: 1px; */
   background: var(--primary-color);
 }
 
 .bg-green:focus {
-  outline-offset: 1px;
+  /* outline-offset: 1px; */
   background: var(--bg-green-focus);
 }
 
 .bg-orange:focus {
-  outline-offset: 1px;
+  /* outline-offset: 1px; */
   background: var(--bg-orange-focus);
 }
 
 .bg-red:focus {
-  outline-offset: 1px;
+  /* outline-offset: 1px; */
   background: var(--bg-red-focus);
 }
 
