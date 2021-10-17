@@ -1,0 +1,262 @@
+.content h1 , .content h3 {
+  margin-bottom : 1rem
+}
+
+.container {
+  min-height: 100%;
+  display: grid;
+  grid-gap: 1rem;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: 70px auto 70px;
+}
+
+.active {
+  font-weight:bolder;
+}
+
+.side-bar .active {
+  font-weight: bolder;
+  border-bottom: none;
+}
+
+.side-bar a:hover {
+  font-weight: 600;
+  ;
+}
+
+.side-bar {
+  display: block;
+  position: fixed;
+  top: 3.7rem;
+  width: 100%;
+  max-width: 15rem;
+  height: 77.1vh;
+  overflow: auto;
+  background-color: var(--secondary-color);
+  padding: 1rem;
+}
+
+.content {
+  grid-column: 3 / -1;
+  background: none;
+  padding-left: 3rem;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  padding: 0.3rem 2rem;
+}
+
+ul {
+  display: flex;
+  padding: 1.7rem;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+ul > li {
+  list-style-type: none;
+  padding: 0.4rem;
+}
+
+/* code-snippets */
+.rating-code,
+.grid-code,
+.typography-code,
+.snackbar-,
+.modal-code,
+.list-code,
+.list-spaced-code,
+.input-code,
+.input-validate-code,
+.image-responsive-code,
+.image-round-code,
+.card-code,
+.card-dismiss-code,
+.card-overlay-code,
+.card-shadow-code,
+.card-horizontal-code,
+.card-text-code,
+.button-code,
+.button-plain-code,
+.badge-code,
+.badge-avatar-code,
+.badge-icons-code,
+.alert-code,
+.avatar-code,
+.avatar-initials-code,
+.css-docs-code {
+  overflow: auto;
+}
+
+.css-docs-code iframe {
+  width: 640px;
+  height: 150px;
+}
+
+.css-docs-js-code iframe {
+  width: 560px;
+  height: 150px;
+}
+
+.nav-code iframe{
+  width: 570px;
+  height: 640px;
+}
+
+.avatar-code iframe {
+  width: 490px;
+  height: 340px;
+}
+
+.avatar-initials-code iframe {
+  width: 500px;
+  height: 280px;
+}
+
+.alert-code iframe {
+  width: 550px;
+  height: 470px;
+}
+
+.badge-code iframe {
+  width: 510px;
+  height: 250px;
+}
+
+.badge-avatar-code iframe {
+  width: 630px;
+  height: 600px;
+}
+
+.badge-icons-code iframe {
+  width: 740px;
+  height: 680px;
+}
+
+.button-code iframe {
+  width: 510px;
+  height: 350px;
+}
+
+.button-plain-code iframe {
+  width: 510px;
+  height: 300px;
+}
+
+.card-code iframe {
+  width: 540px;
+  height: 430px;
+}
+
+.card-dismiss-code iframe {
+  width: 540px;
+  height: 470px;
+}
+
+.card-overlay-code iframe {
+  width: 540px;
+  height: 520px;
+}
+
+.card-shadow-code iframe {
+  width: 540px;
+  height: 550px;
+}
+
+.card-horizontal-code iframe {
+  width: 720px;
+  height: 490px;
+}
+
+.card-text-code iframe {
+  width: 705px;
+  height: 400px;
+}
+
+.image-responsive-code iframe {
+  width: 670px;
+  height: 230px;
+}
+
+.image-round-code iframe {
+  width: 370px;
+  height: 250px;
+}
+
+.input-code iframe {
+  width: 610px;
+  height: 210px;
+}
+
+.input-validate-code iframe {
+  width: 690px;
+  height: 320px;
+}
+
+.rating-code iframe {
+  width: 360px;
+  height: 500px;
+}
+
+.typography-code iframe {
+  width: 500px;
+  height: 350px;
+}
+
+.snackbar-code iframe {
+  width: 520px;
+  height: 250px;
+}
+
+.modal-code iframe {
+  width: 650px;
+  height: 400px;
+}
+
+.list-code iframe {
+  width: 704px;
+  height: 600px;
+}
+
+.list-spaced-code iframe {
+  width: 710px;
+  height: 720px;
+}
+
+.grid-code iframe {
+  width: 330px;
+  height: 200px;
+}
+
+iframe {
+  margin-top: 1rem;
+  border: 0;
+  transform: scale(1);
+  overflow: hidden;
+}
+
+
+.floating {
+  position: fixed;
+  right: 2rem;
+  bottom: 2rem;
+  width: 4rem;
+  height: 4rem;
+  font-size: large;
+  border-radius: 50%;
+  outline : thin dotted;
+  background-color: var(--primary-color);
+  padding: 1rem;
+  cursor: pointer;
+  z-index: 99;
+  color: var(--bg-primary-color);
+  border: 0.2rem solid var(--primary-color);
+  box-shadow: 0.2rem 0.2rem 0.6rem var(--card-shadow);
+}
+
+.floating:hover{
+  background-color: var(--floating-hover);
+}

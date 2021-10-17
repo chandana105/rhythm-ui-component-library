@@ -1,0 +1,100 @@
+
+.simple-alert,
+.outlined-alert {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 1rem;
+}
+
+.simple-alert h2,
+.outlined-alert h2 {
+  margin-bottom: 0.7rem;
+}
+
+.alert {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  font-weight: 400;
+  border-radius: 0.3rem;
+  padding: 2rem 1.1rem;
+  font-size: 0.9rem;
+  position: relative;
+  width: 28rem;
+  font-size: large;
+}
+
+.alert span {
+  line-height: 3rem;
+  position: absolute;
+  left: 4rem;
+}
+
+.alert-primary i {
+  color: var(--alert-primary-i-color);
+}
+
+.alert-success i {
+  color: var(--alert-success-i-color);
+}
+
+.alert-warning i {
+  color: var(--alert-warning-i-color);
+}
+
+.alert-danger i {
+  color: var(--alert-danger-i-color);
+}
+
+.simple-alert .alert-primary {
+  background-color: var(--simple-primary-background);
+  margin-bottom: 1rem;
+}
+
+.simple-alert .alert-success {
+  background-color: var(--simple-success-background);
+  margin-bottom: 1rem;
+}
+
+.simple-alert .alert-warning {
+  background-color: var(--simple-warning-background);
+  margin-bottom: 1rem;
+}
+
+.simple-alert .alert-danger {
+  background-color: var(--simple-danger-background);
+  margin-bottom: 1rem;
+}
+
+.alert-primary i,
+.alert-success i,
+.alert-warning i,
+.alert-danger i {
+  position: absolute;
+  left: 1.5rem;
+  line-height: 1.1;
+  margin-right: auto;
+}
+
+/* outlined alerts */
+.outlined-alert .alert-primary {
+  border: var(--outlined-primary-border);
+  margin-bottom: 1rem;
+}
+
+.outlined-alert .alert-success {
+  border: var(--outlined-success-border);
+  margin-bottom: 1rem;
+}
+
+.outlined-alert .alert-warning {
+  border: var(--outlined-warning-border);
+  margin-bottom: 1rem;
+}
+
+.outlined-alert .alert-danger {
+  border: var(--outlined-danger-border);
+  margin-bottom: 1rem;
+}

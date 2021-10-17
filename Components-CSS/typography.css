@@ -1,0 +1,25 @@
+.heading-container  {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 1rem;
+    width: 58rem;
+   
+}
+
+.heading-container > h1,h2,h3,h4,h5,h6 {
+    margin: 0rem;
+}
+
+
+.heading-container p{
+    font-size: 1.2rem;
+}
+
+.gray-text{
+    color: var(--typography-graytext-color)
+}
+
+.center-text{
+    text-align: center;
+}

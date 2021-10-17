@@ -1,0 +1,54 @@
+
+.grid-container1 > div,
+.grid-container2 > div {
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+  background-color: var(--grid-bg);
+  color: var(--grid-color);
+  padding: 2rem;
+  font-size: larger;
+}
+
+.item1,
+.item2,
+.item3 {
+  border: 0.1rem solid var(--grid-item-border);
+}
+
+.grid-container1 {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  margin-bottom: 2rem;
+}
+
+.grid-container2 {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: 5rem 5rem;
+  margin-bottom: 2rem;
+}
+
+.grid-container1,
+.grid-container2 {
+  width: 58rem;
+}
+
+.grid-container1 .item1 {
+  grid-column: span 6;
+}
+
+.grid-container1 .item2 {
+  grid-column: 7 / 13;
+}
+
+.grid-container2 .item1 {
+  grid-column: 1 / -1;
+}
+
+.grid-container2 .item2 {
+  grid-column: 1 / 7;
+}
+.grid-container2 .item3 {
+  grid-column: 7 / -1;
+}

@@ -1,0 +1,32 @@
+.rating-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 1rem;
+  width: 40rem;
+}
+
+.star {
+  color: var(--rating-star);
+}
+
+.star-rating {
+  border-radius: 0.3rem;
+  padding: 0.3rem 0.8rem;
+  font-size: 0.9rem;
+}
+
+.high {
+  background-color: var(--rating-star-high);
+  color: var(--badge-white-color);
+}
+
+.medium {
+  background-color: var(--rating-star-medium);
+  color: var(--badge-white-color);
+}
+
+.low {
+  background-color: var(--rating-star-low);
+  color: var(--badge-white-color);
+}
