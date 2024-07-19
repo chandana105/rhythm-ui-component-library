@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rhythm UI |Docs |Badge</title>
+    <link rel="shortcut icon" href="/favicon.ico?v=2" type="image/x-icon" />
+
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.5.0/css/all.css"
+    />
+    <link rel="stylesheet" href="/index.css" />
+    <link rel="stylesheet" href="/docs.css" />
+    <link rel="stylesheet" href="/Components-CSS/avatar.css" />
+    <link rel="stylesheet" href="/Components-CSS/badge.css" />
+  </head>
+  <body>
+    <div class="container">
+      <nav class="header">
+        <a class="logo" href="/index.html">
+          <img width="80" src="/images/music.svg" alt="logo" />
+<strong> RHYTHM UI</strong>
+        </a>
+        <div class="search-container">
+          <div class="search-box search">
+            <i class="fas fa-search"></i>
+
+                <input type="text" name="" placeholder="Search..." />
+          </div>
+        </div>
+        <a class="home" href="/">
+          <i class="fas fa-home"></i>
+
+          Home</a
+        >
+        <a class="docs active" href="/docs.html">
+          <i class="fas fa-file-alt"></i>
+
+          Docs</a
+        >
+        <a
+          class="github"
+          target="blank"
+
+          href="https://github.com/chandana105/rhythm-ui-component-library"
+          ><i class="fab fa-github"></i>
+
+          Github</a
+        >
+      </nav>
+      <div class="side-bar">
+        <ul>
+          <li>
+            <a href="/docs.html">Getting Started</a>
+          </li>
+          <li>
+            <a href="/Components/avatar.html">Avatar</a>
+          </li>
+          <li>
+            <a href="/Components/alert.html">Alert</a>
+          </li>
+          <li>
+            <a href="/Components/badge.html" class="active">Badge</a>
+          </li>
+          <li>
+            <a href="/Components/button.html">Button</a>
+          </li>
+          <li>
+            <a href="/Components/card.html">Card</a>
+          </li>
+          <li>
+            <a href="/Components/image.html">Image</a>
+          </li>
+          <li>
+            <a href="/Components/input.html">Input</a>
+          </li>
+          <li>
+            <a href="/Components/lists.html"> Lists</a>
+          </li>
+          <li>
+            <a href="/Components/navigation.html">Navigation</a>
+          </li>
+          <li>
+            <a href="/Components/modal.html">Modal</a>
+          </li>
+          <li>
+            <a href="/Components/rating.html">Rating</a>
+          </li>
+          <li>
+            <a href="/Components/grid.html"> Simplified Grid</a>
+          </li>
+          <li>
+            <a href="/Components/typography.html">Text Utilities</a>
+          </li>
+          <li>
+            <a href="/Components/snackbar.html">Snackbar</a>
+          </li>
+        </ul>
+      </div>
+      <div class="content">
+        <main>
+          <h1>Badges</h1>
+          <h3>Information badges</h3>
+          <div class="badge-container">
+            <span class="badge-regular bg-primary">NEW</span>
+            <span class="badge-regular bg-red">ERROR</span>
+            <span class="badge-regular bg-green">SUCCESS</span>
+            <span class="badge-regular bg-orange">WARNING</span>
+          </div>
+          <div class="badge-code">
+            <iframe
+              src="https://carbon.now.sh/embed/QmWDSiy3M0HqMku7yaQt"
+              sandbox="allow-scripts allow-same-origin"
+            >
+            </iframe>
+          </div>
+
+          <h3>Badges on Avatars</h3>
+          <div class="avatar-container">
+            <div class="avatar-badge-container">
+              <span class="avatar avatar-small">
+                <img src="/images/avatar.jpg" alt="avatar-sm-bdg" />
+              </span>
+              <span class="avatar-badge badge-avatar-small badge-green"></span>
+            </div>
+
+            <div class="avatar-badge-container">
+              <span class="avatar avatar-medium">
+                <img src="/images/avatar.jpg" alt="avatar-md-bdg" />
+              </span>
+              <span class="avatar-badge badge-avatar-medium badge-gray"></span>
+            </div>
+
+            <div class="avatar-badge-container">
+              <span class="avatar avatar-large">
+                <img src="/images/avatar.jpg" alt="avatar-lg-bdg" />
+              </span>
+              <span class="avatar-badge badge-avatar-large badge-green"></span>
+            </div>
+          </div>
+
+          <div class="badge-avatar-code">
+            <iframe
+              src="https://carbon.now.sh/embed/RVEoc27Gr9VUpmvOnsuu"
+              sandbox="allow-scripts allow-same-origin"
+            >
+            </iframe>
+          </div>
+
+          <!-- icons basdges -->
+          <h3>Badges on Icons</h3>
+
+          <div class="avatar-container">
+            <div class="avatar-badge-container">
+              <span class="avatar avatar-large">
+                <i class="fas fa-envelope"></i>
+              </span>
+              <span
+                class="avatar-badge-icons-msg badge-avatar-large-icons badge-red"
+                >3</span
+              >
+            </div>
+
+            <div class="avatar-badge-container cart">
+              <span class="avatar avatar-large">
+                <i class="fas fa-shopping-cart fa-lg"></i>
+              </span>
+              <span
+                class="avatar-badge-icons-cart badge-avatar-large-icons cart badge-red"
+                >4</span
+              >
+            </div>
+
+            <div class="avatar-badge-container">
+              <span class="avatar avatar-large">
+                <i class="fas fa-bell fa-lg"></i>
+              </span>
+              <span
+                class="avatar-badge-icons-bell badge-avatar-large-icons badge-red"
+                >5</span
+              >
+            </div>
+          </div>
+
+          <div class="badge-icons-code">
+            <iframe
+              src="https://carbon.now.sh/embed/PVmDOTjqfAWaS0Ivmrru"
+              sandbox="allow-scripts allow-same-origin"
+            >
+            </iframe>
+          </div>
+          <button class="floating" id="floating-btn" onclick="topFunction()">
+            <i class="fas fa-arrow-up fa-lg"></i>
+          </button>
+        </main>
+      </div>
+     <div class="footer">
+        <div class="footer-text">
+          <span>Made with <i class="fas fa-heart"></i> by Chandana Mahajan</span>
+        </div>
+
+      </div>
+  </body>
+  <script src="/index.js"></script>
+</html>

@@ -1,0 +1,73 @@
+.modal-backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  opacity: 0.7;
+  z-index: 3;
+  background-color: var(--modal-backdrop-color);
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  top: 15rem;
+  left: 25rem;
+  right: 20rem;
+  z-index: 5;
+  background-color: var(--badge-white-color);
+}
+
+.modal-hide {
+  display: none;
+}
+
+.modal-display {
+  display: block;
+}
+
+.modal-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.modal-header,
+.modal-text,
+.modal-footer {
+  padding: 1.2rem;
+  border: 1px solid var(--card-border-color);
+  position: relative;
+}
+
+.modal-header i {
+  cursor: pointer;
+  position: absolute;
+  top: 1.29rem;
+  right: 0.8rem;
+  line-height: 1.2;
+}
+
+.modal-text {
+  margin: 0;
+  padding: 2rem;
+  text-align: center;
+}
+
+.modal-footer {
+  text-align: right;
+}
+
+.btn {
+  box-shadow: none;
+  width: max-content;
+}
+
+.btn-primary:focus {
+  background-color: var(--bg-green-bg);
+}
+
+.btn-secondary:focus {
+  background-color: var(--bg-red-bg);
+}

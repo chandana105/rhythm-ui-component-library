@@ -1,0 +1,27 @@
+.simple-input {
+  height: 8.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  max-width: max-content;
+  padding: 2rem;
+}
+
+.simple-input input {
+  padding: 0.7rem;
+  border: 1px solid var(--card-border-color);
+  /* outline: 1px solid var(--card-border-color); */
+}
+
+.validate {
+  height: 10.5rem;
+}
+
+.validate input {
+  border: 2px solid var(--badge-red-bg);
+}
+
+.input-validation {
+  color: var(--badge-red-bg);
+}
+

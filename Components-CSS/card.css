@@ -1,0 +1,192 @@
+.card-container {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  /* width: 100%; */
+  justify-content: center;
+  align-items: center;
+  width: min-content;
+  position: relative;
+  margin-bottom: 3rem;
+  min-width: 17rem;
+  border: 2px solid var(--card-border-color);
+  z-index: 1;
+}
+
+.card img {
+  width: 100%;
+}
+
+/* horizontal */
+.card2 {
+  display: flex;
+  /* width: 100%; */
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  margin-bottom: 2rem;
+  border: 2px solid var(--card-border-color);
+  z-index: 1;
+  margin-bottom: 3rem;
+}
+
+.card-horizontal {
+  flex-direction: row;
+  max-width: 50rem;
+}
+
+.card-horizontal .thumbnail img {
+  max-width: 10rem;
+  display: block;
+}
+
+.card-horizontal .text {
+  padding: 1.5rem;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.card-horizontal .text .card-title {
+  font-size: 1.2rem;
+  font-weight: 700;
+}
+
+.card-horizontal .text > * {
+  margin: 0.3rem 0;
+  padding-top: 0.3rem;
+}
+
+.card-horizontal .text p {
+  font-size: 1rem;
+}
+
+.card-horizontal .close {
+  cursor: pointer;
+  position: absolute;
+  right: 0.6rem;
+  top: 0.2rem;
+}
+
+/* thumbnail */
+.thumbnail button,
+.text button,
+.card-horizontal button {
+  background: transparent;
+  border: none;
+  /* outline: none; */
+}
+
+.thumbnail button:focus,
+.text button:focus,
+.card-horizontal button:focus {
+  /* outline-offset: 1px; */
+  background: var(--secondary-color);
+}
+
+.btn {
+  box-shadow: none;
+  border: 0.01rem solid var(--badge-white-color);
+  border-radius: 0;
+  width: 100%;
+}
+
+.shadow {
+  box-shadow: 3px 2px 20px 2px var(--card-shadow);
+  border: none;
+}
+
+.overlay {
+  position: absolute;
+  width: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 10.3rem;
+  background-color: rgba(0, 0, 0, 0.6);
+  z-index: 2;
+  color: var(--badge-white-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.card .thumbnail {
+  position: relative;
+}
+
+.card .thumbnail img {
+  width: 100%;
+}
+
+.card .thumbnail .badge {
+  position: absolute;
+  left: 0px;
+  top: 20px;
+}
+
+.card .thumbnail .close,
+.text .close {
+  cursor: pointer;
+  position: absolute;
+  right: 0.6rem;
+  top: 0.6rem;
+}
+
+.text {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  padding: 1rem;
+  letter-spacing: 0.02rem;
+  position: relative;
+}
+
+.wish {
+  position: absolute;
+  right: 0.6rem;
+  top: 0.6rem;
+}
+
+.heading {
+  line-height: 0.8;
+  margin: 0px;
+  padding: 0.5rem;
+}
+
+.lower {
+  padding: 0.5rem;
+}
+
+.price {
+  display: flex;
+  padding: 0.5rem;
+  line-height: 1;
+}
+
+.product-price {
+  font-weight: bold;
+  line-height: 1.1;
+}
+
+.price-strike {
+  margin-left: 0.7rem;
+  color: var(--badge-gray-bg);
+  font-weight: 700;
+  text-decoration: line-through;
+  text-decoration-style: solid;
+  line-height: 1.1;
+}
+
+.discount {
+  margin-left: 0.7rem;
+  color: var(--card-discount-color);
+}
